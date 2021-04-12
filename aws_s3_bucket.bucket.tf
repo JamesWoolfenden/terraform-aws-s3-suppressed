@@ -1,4 +1,5 @@
 resource "aws_s3_bucket" "bucket" {
+  # checkov:skip=CKV_AWS_144: ADD REASON
   acl    = var.s3_bucket_acl
   bucket = var.s3_bucket_name
   policy = var.s3_bucket_policy

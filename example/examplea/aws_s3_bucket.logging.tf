@@ -1,4 +1,6 @@
 resource "aws_s3_bucket" "logging" {
+  # checkov:skip=CKV_AWS_145: ADD REASON
+  # checkov:skip=CKV_AWS_144: ADD REASON
   # bridgecrew:skip=CKV_AWS_18:This is a logging bucket
   # bridgecrew:skip=CKV_AWS_21:Versioning for logs? Yeah no
   # bridgecrew:skip=CKV_AWS_52:MFA requirement breaks tf
