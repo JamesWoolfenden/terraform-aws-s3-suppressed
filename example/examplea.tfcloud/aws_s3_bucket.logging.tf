@@ -15,5 +15,5 @@ resource "aws_s3_bucket" "logging" {
     enabled    = false
     mfa_delete = false
   }
-  tags=var.common_tags
+  tags = var.common_tags
 }
