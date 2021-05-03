@@ -1,4 +1,5 @@
 resource "aws_s3_bucket" "logging" {
+  # tfsec:ignore:AWS077
   # checkov:skip=CKV_AWS_145: ADD REASON
   # checkov:skip=CKV_AWS_144: ADD REASON
   # bridgecrew:skip=CKV_AWS_18:This is a logging bucket
