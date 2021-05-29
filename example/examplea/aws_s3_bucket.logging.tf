@@ -5,6 +5,7 @@ resource "aws_s3_bucket" "logging" {
   # bridgecrew:skip=CKV_AWS_18:This is a logging bucket
   # bridgecrew:skip=CKV_AWS_21:Versioning for logs? Yeah no
   # bridgecrew:skip=CKV_AWS_52:MFA requirement breaks tf
+  # checkov:skip=CKV2_AWS_6:too restrictive
   acl    = "log-delivery-write"
   bucket = "logging-${data.aws_caller_identity.current.account_id}"
   server_side_encryption_configuration {
