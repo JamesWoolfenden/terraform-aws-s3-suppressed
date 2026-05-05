@@ -127,9 +127,12 @@ resource "aws_iam_policy" "terraform_pike" {
                 "s3:GetObjectAcl",
                 "s3:GetReplicationConfiguration",
                 "s3:ListBucket",
-                "s3:PutBucketPublicAccessBlock"
+                "s3:PutBucketPublicAccessBlock",
+                "s3:PutBucketTagging"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         }
     ]
 })
