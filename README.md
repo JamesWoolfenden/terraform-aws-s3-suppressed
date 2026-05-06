@@ -1,13 +1,11 @@
-# terraform-aws-s3
+# terraform-aws-s3-suppressed
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-s3/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-s3)
-[![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-s3.svg)](https://github.com/JamesWoolfenden/terraform-aws-s3/releases/latest)
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-s3.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-s3/releases/latest)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-s3-suppressed/workflows/Verify/badge.svg?branch=main)](https://github.com/JamesWoolfenden/terraform-aws-s3-suppressed)
+[![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-s3-suppressed.svg)](https://github.com/JamesWoolfenden/terraform-aws-s3-suppressed/releases/latest)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-s3-suppressed.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-s3-suppressed/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/JamesWoolfenden/terraform-aws-s3/cis_aws)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-s3&benchmark=CIS+AWS+V1.2)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/jameswoolfenden/terraform-aws-s3/general)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-s3&benchmark=INFRASTRUCTURE+SECURITY)
 
 This ia a Terraform module to provision a secure Terraform S3 bucket. It also has a provisioning test included in its' Github actions so you can be sure each labelled version works.
 
@@ -49,7 +47,7 @@ No requirements.
 ## Providers
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 
 ## Modules
@@ -59,7 +57,7 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [aws_s3_bucket.bucket](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket) | resource |
 | [aws_s3_bucket_public_access_block.example](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_public_access_block) | resource |
 | [aws_caller_identity.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
@@ -67,8 +65,8 @@ No modules.
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_access_block"></a> [access\_block](#input\_access\_block) | Settings for the public access block | `map(any)` | <pre>{<br>  "block_public_acls": true,<br>  "block_public_policy": true,<br>  "ignore_public_acls": true,<br>  "restrict_public_buckets": true<br>}</pre> | no |
+| ---- | ----------- | ---- | ------- | :------: |
+| <a name="input_access_block"></a> [access\_block](#input\_access\_block) | Settings for the public access block | `map(any)` | <pre>{<br/>  "block_public_acls": true,<br/>  "block_public_policy": true,<br/>  "ignore_public_acls": true,<br/>  "restrict_public_buckets": true<br/>}</pre> | no |
 | <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | This is a map type for applying tags on resources | `map(any)` | n/a | yes |
 | <a name="input_logging"></a> [logging](#input\_logging) | n/a | `list(string)` | `[]` | no |
 | <a name="input_mfa_delete"></a> [mfa\_delete](#input\_mfa\_delete) | To enable/disable MFA delete | `bool` | `true` | no |
@@ -83,7 +81,7 @@ No modules.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_account_id"></a> [account\_id](#output\_account\_id) | The AWS account number in use |
 | <a name="output_bucket"></a> [bucket](#output\_bucket) | The  bucket |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
@@ -152,13 +150,13 @@ Check out these related projects.
 
 **Got a question?**
 
-File a GitHub [issue](https://github.com/JamesWoolfenden/terraform-aws-3/issues).
+File a GitHub [issue](https://github.com/JamesWoolfenden/terraform-aws-s3-suppressed/issues).
 
 ## Contributing
 
 ### Bug Reports & Feature Requests
 
-Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-3/issues) to report any bugs or file feature requests.
+Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-s3-suppressed/issues) to report any bugs or file feature requests.
 
 ## Copyrights
 
